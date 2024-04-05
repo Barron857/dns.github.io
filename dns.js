@@ -102,7 +102,7 @@ function selectUpstreamServer() {
   return UPSTREAM_DNS_SERVERS[0];
 }
 
-// 监听端口，接收HTTP流量
+// 监听端口，接收HTTP流量，搭配Replit使用
 const PORT = 8787;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
