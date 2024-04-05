@@ -103,6 +103,7 @@ function selectUpstreamServer() {
 }
 
 // 监听443端口，接收HTTP流量，配合Cloudflare Worker使用
-server.listen(443, () => {
-  console.log('DNS-over-HTTPS server running on port 443');
+const PORT = process.env.PORT || 443;
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
