@@ -102,8 +102,8 @@ function selectUpstreamServer() {
   return UPSTREAM_DNS_SERVERS[0];
 }
 
-// 监听443端口，接收HTTP流量，配合Cloudflare Worker使用
-const PORT = process.env.PORT || 443;
+// 监听端口，接收HTTP流量
+const PORT = process.env.PORT;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
