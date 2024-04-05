@@ -1,0 +1,15 @@
+{
+  "name": "dns.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dns.js",
+  "scripts": {
+    "app": "node dns.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dns-packet": "^5.6.1"
+  }
+}
